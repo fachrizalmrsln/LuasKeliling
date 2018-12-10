@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahri.luke.VBola">
+
+    <LinearLayout
+        android:id="@+id/main_screen_volume_bola"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:id="@+id/toolbar_vbola"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:title="@string/VBola"
+            app:titleTextColor="#FFF">
+
+        </android.support.v7.widget.Toolbar>
+
+        <ScrollView
+            android:id="@+id/scroll_vbola"
+            android:focusable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumus Volume Bola !"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_marginRight="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:id="@+id/tv_penjelasan_rumus_volume_bola"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Penjelasan"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hitung Volume Bola !"
+                    android:textSize="20dp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_marginLeft="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Satuan dalam Centi Meter (cm)"
+                    android:textStyle="italic"
+                    android:layout_marginBottom="10dp"/>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="100dp">
+
+                        <TextView
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Masukkan Angka Disini !"
+                            android:textColor="@android:color/black"
+                            android:textStyle="italic"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                        <LinearLayout
+                            android:padding="6dp"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jari-jari"
+                                android:layout_marginRight="19dp"
+                                android:textColor="@android:color/black"/>
+
+                            <EditText
+                                android:id="@+id/et_jari_vbola"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="0"
+                                android:gravity="center"
+                                android:textStyle="italic"
+                                android:inputType="number"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginRight="6dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_marginRight="4dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rumus yang digunakan :"
+                            android:textStyle="italic"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:textColor="@android:color/black"/>
+
+                        <TextView
+                            android:layout_marginTop="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/RumusVolumeBola"
+                            android:textSize="16dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan :"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="V = Volume\npi = 3.14 atau 22/7\nr = jari-jari bola"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_hitung_v_bola"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hitung !"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="18dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

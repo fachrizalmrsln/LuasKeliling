@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahri.luke.Bola"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_bola"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/bola"
+        app:titleTextColor="#FFF">
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/bola"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Rumus - Rumus Bola !"
+                        android:padding="6dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="28sp"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:layout_above="@+id/lp_bola"
+                        android:onClick="bt_bola1"
+                        android:background="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Volume Bola !"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textSize="20sp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_marginBottom="6dp"/>
+
+                    <Button
+                        android:id="@+id/lp_bola"
+                        android:layout_alignParentBottom="true"
+                        android:onClick="bt_bola2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Luas Permukaan Bola !"
+                        android:background="@color/colorPrimary"
+                        android:textSize="20sp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:textColor="@android:color/white"
+                        android:clickable="true"
+                        android:focusable="true"/>
+        </RelativeLayout>
+</LinearLayout>

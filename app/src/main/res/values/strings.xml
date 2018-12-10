@@ -1,0 +1,61 @@
+<resources>
+
+    //toolbar_name
+    <string name="app_name">Bang Ru !</string>
+    <string name="kubus">Kubus !</string>
+    <string name="balok">Balok !</string>
+    <string name="bola">Bola !</string>
+    <string name="kerucut">Kerucut !</string>
+    <string name="limas_segi_empat">Limas Segi Empat !</string>
+    <string name="limas_segi_tiga">Limas Segi Tiga !</string>
+    <string name="prisma">Prisma !</string>
+    <string name="tabung">Tabung !</string>
+    <string name="VKubus">Volume Kubus !</string>
+    <string name="LPKubus">Luas Permukaan Kubus !</string>
+    <string name="VBalok">Volume Balok !</string>
+    <string name="LPBalok">Luas Permukaan Balok !</string>
+    <string name="VTabung">Volume Tabung !</string>
+    <string name="LPTabung">Luas Permukaan Tabung !</string>
+    <string name="VPrisma">Volume Prisma !</string>
+    <string name="LPPrisma">Luas Permukaan Prisma  !</string>
+    <string name="VLimasSegiEmpat">Volume Limas Segi Empat !</string>
+    <string name="LPLimasSegiEmpat">Luas Permukaan Limas Segi Empat !</string>
+    <string name="VLimasSegiTiga">Volume Limas Segi Tiga !</string>
+    <string name="LPLimasSegiTiga">Luas Permukaan Limas Segi Tiga !</string>
+    <string name="VKerucut">Volume Kerucut !</string>
+    <string name="LPKerucut">Luas Permukaan Kerucut !</string>
+    <string name="VBola">Volume Bola !</string>
+    <string name="LPBola">Luas Permukaan Bola !</string>
+
+    //rumus_balok
+    <string name="RumusVolumeBalok">V = P x l x T</string>
+    <string name="RumusLuasPermukaanBalok">L = 2 (P x l + P x T + l x T)</string>
+
+    //rumus_bola
+    <string name="RumusVolumeBola">V = 4/3 x pi x r x r x r</string>
+    <string name="RumusLuasPermukaanBola">L = 4 x pi x r x r</string>
+
+    //rumus_kerucut
+    <string name="RumusVolumeKerucut">V = 1/3 x pi x r x r x t</string>
+    <string name="RumusLuasPermukaanKerucut">L = pi x r x (r + s)</string>
+    
+    //rumus_kubus
+    <string name="RumusVolumeKubus">V = s x s x s</string>
+    <string name="RumusLuasPermukaanKubus">L = 6 x s x s</string>
+
+    //rumus_limas_segi_empat
+    <string name="RumusVolumeLimasSegiEmpat">V = 1/3 x p x l x T</string>
+    <string name="RumusLuasPermukaanLimasSegiEmpat">L = LA x LS</string>
+
+    //rumus_limas_segi_tiga
+    <string name="RumusVolumeLimasSegiTiga">V = 1/3 (1/2 x p x l)</string>
+    <string name="RumusLuasPermukaanLimasSegiTiga">L = 1/2 x a x t</string>
+
+    //rumus_prisma
+    <string name="RumusVolumePrisma">V  = LA x T</string>
+    <string name="RumusLuasPermukaanPrisma">L = 2 x LA x LS</string>
+
+    //rumus_tabung
+    <string name="RumusVolumeTabung">V = pi x r x r x T</string>
+    <string name="RumusLuasPermukaanTabung">L = 2 x pi x r (T + r)</string>
+</resources>

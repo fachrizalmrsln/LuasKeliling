@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fahri.luke">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Kubus"
+            android:parentActivityName=".Kubus"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Balok"
+            android:parentActivityName=".Balok"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Tabung"
+            android:parentActivityName=".Tabung"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Prisma"
+            android:parentActivityName=".Prisma"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LimasSegiEmpat"
+            android:parentActivityName=".LimasSegiEmpat"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".LimasSegiTiga"
+            android:parentActivityName=".LimasSegiTiga"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Kerucut"
+            android:parentActivityName=".Kerucut"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".Bola"
+            android:parentActivityName=".Bola"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".VKubus"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VKubus"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPKubus"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPKubus"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VBalok"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VBalok"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPBalok"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPBalok"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VTabung"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VTabung"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPTabung"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPTabung"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VPrisma"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VPrisma"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPPrisma"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPPrisma"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VLimasSegiEmpat"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VLimasSegiEmpat"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPLimasSegiEmpat"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPLimasSegiEmpat"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VLimasSegiTiga"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VLimasSegiTiga"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPLimasSegiTiga"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPLimasSegiTiga"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VKerucut"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VKerucut"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPKerucut"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPKerucut"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".VBola"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".VBola"
+                  android:windowSoftInputMode="stateHidden"/>
+
+        <activity android:name=".LPBola"
+                  android:screenOrientation="portrait"
+                  android:parentActivityName=".LPBola"
+                  android:windowSoftInputMode="stateHidden">
+        </activity>
+
+    </application>
+
+</manifest>

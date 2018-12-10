@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fahri.luke.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_main"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/app_name"
+        app:titleTextColor="#FFF">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/tv_content_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:padding="6dp"
+                android:text="PILIH BANGUN RUANG !"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="28dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:orientation="vertical"
+                android:id="@+id/ll_card_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_content_info">
+
+                <RelativeLayout
+                    android:id="@+id/rl_card_list1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview1"
+                        android:onClick="cardview1"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:id="@+id/iv_kubus"
+                            android:layout_gravity="center"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:src="@drawable/kubus"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Kubus !"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_alignParentRight="true"
+                        android:onClick="cardview2"
+                        android:id="@+id/cardview2"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/balok"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Balok !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+                    </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_card_list2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_card_list1">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview3"
+                        android:onClick="cardview3"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/tabung"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Tabung !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview4"
+                        android:onClick="cardview4"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="110dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/prisma"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Prisma !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_card_list3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/rl_card_list2">
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview5"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        android:onClick="cardview5"
+                        app:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/limassegiempat" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Limas Segi Empat !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview6"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        android:onClick="cardview6"
+                        app:cardCornerRadius="10dp"
+                        card_view:cardElevation="5dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/limassegitiga"
+                            android:layout_gravity="center"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Limas Segi Tiga !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_card_list4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rl_card_list3">
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview7"
+                        android:onClick="cardview7"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kerucut"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Kerucut !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/cardview8"
+                        android:onClick="cardview8"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="#88c26e"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
+                        card_view:cardElevation="5dp"
+                        app:cardCornerRadius="10dp">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@drawable/bola"
+                            android:layout_gravity="center"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="120dp"
+                            android:gravity="center_horizontal"
+                            android:text="Bola !"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="sans-serif-smallcaps"/>
+
+                    </android.support.v7.widget.CardView>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

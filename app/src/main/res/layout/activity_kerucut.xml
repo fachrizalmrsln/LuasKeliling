@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahri.luke.Kerucut"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_kerucut"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/kerucut"
+        app:titleTextColor="#FFF">
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/kerucut"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:padding="6dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="Rumus - Rumus Kerucut  !"
+                    android:fontFamily="sans-serif-smallcaps"/>
+
+                <Button
+                    android:layout_above="@+id/lp_kerucut"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="bt_kerucut1"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Volume Kerucut !"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="20sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <Button
+                    android:id="@+id/lp_kerucut"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="bt_kerucut2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Luas Permukaan Kerucut !"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+        </RelativeLayout>
+</LinearLayout>

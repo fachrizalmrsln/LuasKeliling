@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahri.luke.LimasSegiEmpat"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_limas_segi_empat"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/limas_segi_empat"
+        app:titleTextColor="#FFF">
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/limassegiempat"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rumus - Rumus Limas Segi Empat !"
+                    android:padding="6dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif-smallcaps"/>
+                <Button
+                    android:layout_above="@+id/lp_limasempat"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="bt_limas_segi_empat1"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Volume Limas Segi Empat !"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="20dp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <Button
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/lp_limasempat"
+                    android:onClick="bt_limas_segi_empat2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Luas Permukaan Limas Segi Empat !"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
+        </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fahri.luke.LimasSegiTiga"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbar_limas_segi_tiga"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="@string/limas_segi_tiga"
+        app:titleTextColor="#FFF">
+
+    </android.support.v7.widget.Toolbar>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp">
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/limassegitiga"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:text="Rumus - Rumus Limas Segi Tiga !"
+                    android:fontFamily="sans-serif-smallcaps"/>
+                <Button
+                    android:layout_above="@+id/lp_limastiga"
+                    android:layout_marginBottom="6dp"
+                    android:onClick="bt_limas_segi_tiga1"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Volume Limas Segi Tiga !"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textSize="20sp"
+                    android:clickable="true"
+                    android:focusable="true"/>
+
+                <Button
+                    android:id="@+id/lp_limastiga"
+                    android:layout_alignParentBottom="true"
+                    android:onClick="bt_limas_segi_tiga2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Luas Permukaan Limas Segi Tiga !"
+                    android:background="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="@android:color/white"
+                    android:clickable="true"
+                    android:focusable="true"/>
+        </RelativeLayout>
+</LinearLayout>
